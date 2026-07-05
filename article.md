@@ -34,7 +34,7 @@ None of these frameworks asks people "what does success mean to you?" They measu
 
 ---
 
-### 10 Dimensions of Success
+### 11 Dimensions of Success
 
 Each dimension maps to at least one established framework. Some are well-studied. Some sit in gaps between frameworks. All 10 emerged from cross-referencing which variables differentiate the most between self-reported definitions of "a successful life" across cultures in WVS data.
 
@@ -62,7 +62,7 @@ Each dimension maps to at least one established framework. Some are well-studied
 
 ### 8 Clusters
 
-K-means clustering on the 10 dimensions, weighted by survey prevalence data, produces 8 stable groups. Five map to well-documented cultural populations. Three occupy regions of the value space that existing frameworks either group incorrectly or ignore.
+K-means clustering on the 11 dimensions, weighted by survey prevalence data, produces 8 stable groups. Five map to well-documented cultural populations. Three occupy regions of the value space that existing frameworks either group incorrectly or ignore.
 
 #### Asian Traditional
 
@@ -168,7 +168,7 @@ Six structural patterns emerge from the data.
 
 ### Career Alignment
 
-The interactive tool on this page scores 30 careers against any combination of the 10 dimensions. Select a cultural cluster to load its 2025 values, or build a custom profile with the sliders. The ranking uses a blended score: 60% cosine similarity (directional alignment between your value profile and the career's profile) and 40% weighted sum (absolute strength on the dimensions you care about most).
+The interactive tool on this page scores 30 careers against any combination of the 11 dimensions. Select a cultural cluster to load its 2025 values, or build a custom profile with the sliders. The ranking uses a blended score: 60% cosine similarity (directional alignment between your value profile and the career's profile) and 40% weighted sum (absolute strength on the dimensions you care about most).
 
 Some results worth noting:
 
