@@ -110,6 +110,61 @@
     border-top: 1px solid var(--border); margin-top: 40px;
   }
 
+  /* ── MOBILE RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .hero { padding: 40px 16px 24px; }
+    .hero h1 { font-size: 28px; }
+    .hero .subtitle { font-size: 14px; }
+    .container { padding: 0 12px; }
+    .article { padding: 0 16px; }
+    .article h1 { font-size: 1.6rem; }
+    .article h2 { font-size: 1.2rem; }
+    .article h3 { font-size: 1.05rem; }
+    .article p { font-size: 0.95rem; }
+
+    .ranker-controls {
+      gap: 6px; padding: 12px 0;
+    }
+    .cluster-btn {
+      padding: 6px 12px; font-size: 11px;
+    }
+    .slider-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px; padding: 10px;
+    }
+    .career-row {
+      padding: 8px 10px; gap: 8px; flex-wrap: wrap;
+    }
+    .career-rank { font-size: 16px; min-width: 28px; }
+    .career-name { font-size: 12px; min-width: 0; }
+    .career-score { font-size: 14px; }
+    .career-bar-wrap { width: 60px; }
+    .career-dims { display: none; }
+
+    .data-table { font-size: 11px; }
+    .data-table th, .data-table td { padding: 5px 6px; }
+
+    .chart-section { padding: 0 8px; }
+    .chart-section img { max-width: 100%; height: auto; }
+
+    .legend { flex-wrap: wrap; gap: 6px; }
+    .legend-tag { font-size: 10px; }
+
+    nav.toc { padding: 0.8em 1em; }
+    nav.toc a { font-size: 0.85rem; }
+  }
+
+  @media (max-width: 480px) {
+    .slider-grid {
+      grid-template-columns: 1fr;
+    }
+    .cluster-btn {
+      padding: 5px 10px; font-size: 10px;
+    }
+    .career-bar-wrap { width: 40px; }
+    .career-name { font-size: 11px; }
+  }
+
 
 /* Article-specific styles */
 .article {
@@ -309,6 +364,14 @@ nav.toc a:hover {
 <p>Some results worth noting:</p>
 <p>Surgeon ranks #1 for Asian Traditional (high education, high prestige, high security) but falls to #18 for Influencer/Creator (low creative expression, low autonomy, low social influence). Content Creator ranks #1 for Influencer/Creator but #27 for Western Traditional. Community Organizer ranks #1 for Ubuntu/Communal but #28 for AI Maximalist. Remote Tech Worker on a FIRE path places top 5 for FIRE/Minimalist but bottom half for both Asian Traditional and Ubuntu/Communal.</p>
 <p>The tool makes visible what most career advice ignores: the "best career" is a function of which success dimensions you weight highest. And that weighting is inherited more often than chosen. O*NET's occupational database and Schwartz's career anchor research both confirm that values alignment predicts career satisfaction more reliably than salary, prestige, or even aptitude. The question is not "what career should I choose?" but "what scoring function am I using to evaluate careers, and where did I get it?"</p>
+
+<div style="margin: 2em 0;">
+  <h3 style="text-align:center; margin-bottom: 1em;">🎚 Career Ranker</h3>
+  <div class="ranker-controls" id="clusterBtns"></div>
+  <div class="slider-grid" id="sliderGrid"></div>
+  <div class="career-list" id="careerList"></div>
+</div>
+
 <hr />
 <h3>Your Turn</h3>
 <p>The clusters above describe populations, not individuals. You might score 90 on Autonomy (AI Maximalist territory), 85 on Family/Community (Ubuntu territory), and 20 on Social Influence (definitely not Influencer territory). That combination does not fit any single cluster.</p>
